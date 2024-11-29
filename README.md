@@ -100,6 +100,7 @@ export const count = writable(0);
 ```
 
 ### Create a Registry of Svelte components
+#### registry.js
 
 We will need it to resolve components by name
 ```js
@@ -138,6 +139,7 @@ The AEM component will create an HTML element with the tag <svelte-component> an
 ```
 <svelte-component data-component="counter"></svelte-component>
 ```
+the component name `counter`  must match the key in registry.js
 
 ## How to Develop
 
@@ -147,7 +149,7 @@ The AEM component will create an HTML element with the tag <svelte-component> an
 mvn clean install -PautoInstallPackage
 ```
 
-### Star the Dev mode to watch for changes and push them to AEM
+### Start the Dev mode to watch for changes and push them to AEM
 from the `ui.frontend` directory run
 ```
 npm run dev
