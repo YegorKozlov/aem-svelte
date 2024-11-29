@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:allowedTemplates="[/conf/aem-svelte/settings/wcm/templates/.*]"
+        cq:conf="/conf/aem-svelte"
+        cq:lastModified="{Date}2024-11-27T14:46:05.897Z"
+        cq:lastModifiedBy="admin"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="AEM Svelte Examples"
+        sling:configRef="/conf/aem-svelte"
+        sling:resourceType="core/wcm/components/page/v1/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="core/wcm/components/container/v1/container">
+            <container
+                jcr:lastModified="{Date}2024-11-25T18:14:38.304Z"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="core/wcm/components/container/v1/container"
+                layout="simple">
+                <text
+                    jcr:created="{Date}2024-11-25T18:19:40.516Z"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2024-11-27T14:46:05.887Z"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="corpay-commons/components/content/text"
+                    _cssAll="w-100 md_w-50"
+                    text="&lt;p>Hello, &lt;span data-name=&quot;Name&quot;>Username!&lt;/span>&lt;/p>&#xd;&#xa;"
+                    textIsRich="true">
+                    <attributes jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            _name="data-component"
+                            value="Text"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            _name="data-name"
+                            value="Count"/>
+                    </attributes>
+                </text>
+                <button
+                    jcr:created="{Date}2024-11-27T10:09:01.657Z"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2024-11-27T10:17:36.049Z"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="corpay-commons/components/content/button"
+                    linkUrl="#"
+                    text="Increment">
+                    <attributes jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            _name="data-action"
+                            value="increment"/>
+                    </attributes>
+                </button>
+            </container>
+        </root>
+    </jcr:content>
+    <counter/>
+</jcr:root>

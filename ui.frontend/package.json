@@ -1,0 +1,19 @@
+{
+  "name": "aem-svelte",
+  "author": "Yegor Kozlov",
+  "version": "1.0.0",
+  "dependencies": {
+    "svelte": "^4.2.3"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "concurrently \"rollup -c -w\" \"aemsync -t http://admin:admin@localhost:4504 -w ../ui.apps/src/main/content\""
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.3.0",
+    "aemsync": "^5.0.5",
+    "concurrently": "^9.1.0",
+    "rollup": "^4.27.4",
+    "rollup-plugin-svelte": "^7.2.2"
+  }
+}

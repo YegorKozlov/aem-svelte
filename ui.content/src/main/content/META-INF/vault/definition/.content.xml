@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:vlt="http://www.day.com/jcr/vault/1.0"
+    jcr:created="{Date}2024-11-29T11:42:33.251Z"
+    jcr:createdBy="admin"
+    jcr:description="\0"
+    jcr:lastModified="{Date}2024-11-29T11:42:33.251Z"
+    jcr:lastModifiedBy="admin"
+    jcr:primaryType="vlt:PackageDefinition"
+    buildCount="1"
+    builtWith="Adobe Experience Manager-2024.11.18598.20241113T125352Z"
+    group="my_packages"
+    lastUnwrapped="{Date}2024-11-29T11:42:33.251Z"
+    lastUnwrappedBy="admin"
+    lastWrapped="{Date}2024-11-29T11:42:33.251Z"
+    lastWrappedBy="admin"
+    name="aem-svelte"
+    version="\0">
+    <filter jcr:primaryType="nt:unstructured">
+        <f0
+            jcr:primaryType="nt:unstructured"
+            mode="replace"
+            propertyRules="[]"
+            root="/conf/aem-svelte"
+            rules="[]"/>
+        <f1
+            jcr:primaryType="nt:unstructured"
+            mode="replace"
+            propertyRules="[]"
+            root="/content/aem-svelte"
+            rules="[]"/>
+    </filter>
+</jcr:root>

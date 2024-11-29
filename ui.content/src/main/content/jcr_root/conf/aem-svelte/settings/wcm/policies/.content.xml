@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="cq:Page">
+    <core jcr:primaryType="nt:unstructured">
+        <wcm jcr:primaryType="nt:unstructured">
+            <components jcr:primaryType="nt:unstructured">
+                <page jcr:primaryType="nt:unstructured">
+                    <v3 jcr:primaryType="nt:unstructured">
+                        <page jcr:primaryType="nt:unstructured">
+                            <policy_default
+                                jcr:description="Includes the required client libraries."
+                                jcr:lastModified="{Date}2024-11-29T09:34:19.614Z"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Generic Page"
+                                sling:resourceType="wcm/core/components/policy/policy"
+                                clientlibs="aem-svelte"
+                                clientlibsAsync="false">
+                                <jcr:content
+                                    cq:isDelivered="{Boolean}false"
+                                    cq:lastReplicated="{Date}2024-11-27T08:31:51.136Z"
+                                    cq:lastReplicated_publish="{Date}2024-11-27T08:31:51.136Z"
+                                    cq:lastReplicatedBy="admin"
+                                    cq:lastReplicatedBy_publish="admin"
+                                    cq:lastReplicationAction="Activate"
+                                    cq:lastReplicationAction_publish="Activate"
+                                    jcr:mixinTypes="[cq:ReplicationStatus,cq:ReplicationStatus2]"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </policy_default>
+                            <policy_contact_us
+                                cq:styleDefaultClasses="contactus-page"
+                                jcr:description="Includes the required client libraries."
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Contact Us"
+                                sling:resourceType="wcm/core/components/policy/policy"
+                                clientlibs="[core.wcm.components.accordion.v1,core.wcm.components.tabs.v1,core.wcm.components.carousel.v1,core.wcm.components.image.v3,core.wcm.components.breadcrumb.v2,core.wcm.components.search.v1,core.wcm.components.form.text.v2,core.wcm.components.pdfviewer.v1,core.wcm.components.embed.v1,core.wcm.components.commons.datalayer.v1]">
+                                <jcr:content jcr:primaryType="nt:unstructured"/>
+                            </policy_contact_us>
+                            <policy_article
+                                cq:styleDefaultClasses="article-page"
+                                jcr:description="Includes the required client libraries."
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Article Page"
+                                sling:resourceType="wcm/core/components/policy/policy"
+                                clientlibs="[core.wcm.components.accordion.v1,core.wcm.components.tabs.v1,core.wcm.components.carousel.v1,core.wcm.components.image.v3,core.wcm.components.breadcrumb.v2,core.wcm.components.search.v1,core.wcm.components.form.text.v2,core.wcm.components.pdfviewer.v1,core.wcm.components.embed.v1,core.wcm.components.commons.datalayer.v1]">
+                                <jcr:content jcr:primaryType="nt:unstructured"/>
+                            </policy_article>
+                            <policy_home
+                                cq:styleDefaultClasses="home-page"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Home page"
+                                sling:resourceType="wcm/core/components/policy/policy"
+                                clientlibs="[core.wcm.components.accordion.v1,core.wcm.components.tabs.v1,core.wcm.components.carousel.v1,core.wcm.components.image.v3,core.wcm.components.breadcrumb.v2,core.wcm.components.search.v1,core.wcm.components.form.text.v2,core.wcm.components.pdfviewer.v1,core.wcm.components.embed.v1,core.wcm.components.commons.datalayer.v1]">
+                                <jcr:content jcr:primaryType="nt:unstructured"/>
+                            </policy_home>
+                            <policy_171175435138959
+                                jcr:lastModified="{Date}2024-11-29T10:39:12.345Z"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Svelte Page"
+                                sling:resourceType="wcm/core/components/policy/policy"
+                                clientlibs="aem-svelte"
+                                clientlibsAsync="false">
+                                <jcr:content jcr:primaryType="nt:unstructured"/>
+                            </policy_171175435138959>
+                        </page>
+                    </v3>
+                </page>
+                <container jcr:primaryType="nt:unstructured">
+                    <v1 jcr:primaryType="nt:unstructured">
+                        <container jcr:primaryType="nt:unstructured">
+                            <policy_root
+                                jcr:description="Allows the template components and defines the component mapping (this configures what components should be automatically created when authors drop assets from the content finder to the page editor)."
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Page Root"
+                                sling:resourceType="wcm/core/components/policy/policy"
+                                components="[/libs/core/wcm/components/accordion/v1/accordion,/libs/core/wcm/components/button/v2/button,/libs/core/wcm/components/carousel/v1/carousel,/libs/core/wcm/components/container/v1/container,/libs/core/wcm/components/contentfragment/v1/contentfragment,/libs/core/wcm/components/contentfragmentlist/v2/contentfragmentlist,/libs/core/wcm/components/form/container/v2/container,/libs/core/wcm/components/download/v2/download,/libs/core/wcm/components/embed/v2/embed,/libs/core/wcm/components/experiencefragment/v2/experiencefragment,/libs/core/wcm/components/image/v3/image,/libs/core/wcm/components/list/v3/list,/libs/core/wcm/components/pdfviewer/v1/pdfviewer,/libs/core/wcm/components/progressbar/v1/progressbar,/libs/core/wcm/components/separator/v1/separator,/libs/core/wcm/components/tabs/v1/tabs,/libs/core/wcm/components/teaser/v2/teaser,/libs/core/wcm/components/text/v2/text,/libs/core/wcm/components/title/v3/title]">
+                                <jcr:content
+                                    cq:isDelivered="{Boolean}false"
+                                    cq:lastReplicated="{Date}2024-11-25T14:35:55.856Z"
+                                    cq:lastReplicated_publish="{Date}2024-11-25T14:35:55.856Z"
+                                    cq:lastReplicatedBy="admin"
+                                    cq:lastReplicatedBy_publish="admin"
+                                    cq:lastReplicationAction="Activate"
+                                    cq:lastReplicationAction_publish="Activate"
+                                    jcr:mixinTypes="[cq:ReplicationStatus,cq:ReplicationStatus2]"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <cq:authoring jcr:primaryType="nt:unstructured">
+                                    <assetToComponentMapping jcr:primaryType="nt:unstructured">
+                                        <mapping_1575024218483
+                                            jcr:primaryType="nt:unstructured"
+                                            assetGroup="media"
+                                            assetMimetype="image/*"
+                                            droptarget="image"
+                                            resourceType="core/wcm/components/image/v3/image"/>
+                                        <mapping_1575030843388
+                                            jcr:primaryType="nt:unstructured"
+                                            assetGroup="content"
+                                            assetMimetype="text/html"
+                                            droptarget="experiencefragment"
+                                            resourceType="core/wcm/components/experiencefragment/v2/experiencefragment"/>
+                                        <mapping_1575030853128
+                                            jcr:primaryType="nt:unstructured"
+                                            assetGroup="media"
+                                            assetMimetype="[text/html,application/vnd.adobe.contentfragment]"
+                                            droptarget="contentfragment"
+                                            resourceType="core/wcm/components/contentfragment/v1/contentfragment"/>
+                                    </assetToComponentMapping>
+                                </cq:authoring>
+                            </policy_root>
+                            <policy_default
+                                jcr:description="Allows the page components and defines the component mapping (this configures what components should be automatically created when authors drop assets from the content finder to the page editor)."
+                                jcr:lastModified="{Date}2024-11-29T09:34:32.504Z"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Page Content"
+                                sling:resourceType="wcm/core/components/policy/policy"
+                                components="[group:AEM Svelte,group:Corpay Commons]"
+                                layout="responsiveGrid"
+                                layoutDisabled="false">
+                                <jcr:content
+                                    cq:isDelivered="{Boolean}false"
+                                    cq:lastReplicated="{Date}2024-11-27T08:31:51.136Z"
+                                    cq:lastReplicated_publish="{Date}2024-11-27T08:31:51.136Z"
+                                    cq:lastReplicatedBy="admin"
+                                    cq:lastReplicatedBy_publish="admin"
+                                    cq:lastReplicationAction="Activate"
+                                    cq:lastReplicationAction_publish="Activate"
+                                    jcr:mixinTypes="[cq:ReplicationStatus,cq:ReplicationStatus2]"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <cq:authoring jcr:primaryType="nt:unstructured">
+                                    <assetToComponentMapping jcr:primaryType="nt:unstructured">
+                                        <mapping_1575030255082
+                                            jcr:primaryType="nt:unstructured"
+                                            assetGroup="media"
+                                            assetMimetype="image/*"
+                                            droptarget="image"
+                                            resourceType="core/wcm/components/image/v3/image"/>
+                                        <mapping_1575030260142
+                                            jcr:primaryType="nt:unstructured"
+                                            assetGroup="content"
+                                            assetMimetype="text/html"
+                                            droptarget="experiencefragment"
+                                            resourceType="core/wcm/components/experiencefragment/v2/experiencefragment"/>
+                                        <mapping_1575030269139
+                                            jcr:primaryType="nt:unstructured"
+                                            assetGroup="media"
+                                            assetMimetype="[text/html,application/vnd.adobe.contentfragment]"
+                                            droptarget="contentfragment"
+                                            resourceType="core/wcm/components/contentfragment/v1/contentfragment"/>
+                                    </assetToComponentMapping>
+                                </cq:authoring>
+                            </policy_default>
+                            <policy_main
+                                cq:styleDefaultClasses="Homepage Content Container"
+                                jcr:description="Sets a &lt;main> element on the page content area."
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Page Main"
+                                sling:resourceType="wcm/core/components/policy/policy"
+                                components="[/libs/core/wcm/components/accordion/v1/accordion,/libs/core/wcm/components/button/v2/button,/libs/core/wcm/components/carousel/v1/carousel,/libs/core/wcm/components/container/v1/container,/libs/core/wcm/components/contentfragment/v1/contentfragment,/libs/core/wcm/components/contentfragmentlist/v2/contentfragmentlist,/libs/core/wcm/components/form/container/v2/container,/libs/core/wcm/components/download/v2/download,/libs/core/wcm/components/embed/v2/embed,/libs/core/wcm/components/experiencefragment/v2/experiencefragment,/libs/core/wcm/components/image/v3/image,/libs/core/wcm/components/list/v3/list,/libs/core/wcm/components/pdfviewer/v1/pdfviewer,/libs/core/wcm/components/progressbar/v1/progressbar,/libs/core/wcm/components/separator/v1/separator,/libs/core/wcm/components/sharing/v1/sharing,/libs/core/wcm/components/tabs/v1/tabs,/libs/core/wcm/components/teaser/v2/teaser,/libs/core/wcm/components/text/v2/text,/libs/core/wcm/components/title/v3/title,/libs/core/wcm/components/form/button/v2/button,/libs/core/wcm/components/form/hidden/v2/hidden,/libs/core/wcm/components/form/options/v2/options,/libs/core/wcm/components/form/text/v2/text,/libs/core/wcm/components/breadcrumb/v3/breadcrumb,/libs/core/wcm/components/languagenavigation/v2/languagenavigation,/libs/core/wcm/components/navigation/v2/navigation,/libs/core/wcm/components/search/v1/search]"
+                                layout="responsiveGrid"
+                                layoutDisabled="false">
+                                <jcr:content jcr:primaryType="nt:unstructured"/>
+                                <cq:styleGroups jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        cq:styleGroupLabel="Styles"
+                                        jcr:primaryType="nt:unstructured">
+                                        <cq:styles jcr:primaryType="nt:unstructured">
+                                            <item0
+                                                cq:styleClasses="homepage-content-container"
+                                                cq:styleId="1612998379971"
+                                                cq:styleLabel="Homepage Content Container"
+                                                jcr:primaryType="nt:unstructured"/>
+                                        </cq:styles>
+                                    </item0>
+                                </cq:styleGroups>
+                            </policy_main>
+                            <policy_xf_root
+                                jcr:description="Allows the template components and defines the component mapping (this configures what components should be automatically created when authors drop assets from the content finder to the page editor)."
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="XF Root"
+                                sling:resourceType="wcm/core/components/policy/policy"
+                                components="[/libs/core/wcm/components/accordion/v1/accordion,/libs/core/wcm/components/button/v2/button,/libs/core/wcm/components/carousel/v1/carousel,/libs/core/wcm/components/container/v1/container,/libs/core/wcm/components/contentfragment/v1/contentfragment,/libs/core/wcm/components/contentfragmentlist/v2/contentfragmentlist,/libs/core/wcm/components/form/container/v2/container,/libs/core/wcm/components/download/v2/download,/libs/core/wcm/components/embed/v2/embed,/libs/core/wcm/components/experiencefragment/v2/experiencefragment,/libs/core/wcm/components/image/v3/image,/libs/core/wcm/components/list/v3/list,/libs/core/wcm/components/pdfviewer/v1/pdfviewer,/libs/core/wcm/components/progressbar/v1/progressbar,/libs/core/wcm/components/separator/v1/separator,/libs/core/wcm/components/sharing/v1/sharing,/libs/core/wcm/components/tabs/v1/tabs,/libs/core/wcm/components/teaser/v2/teaser,/libs/core/wcm/components/text/v2/text,/libs/core/wcm/components/title/v3/title,/libs/core/wcm/components/breadcrumb/v3/breadcrumb,/libs/core/wcm/components/languagenavigation/v2/languagenavigation,/libs/core/wcm/components/navigation/v2/navigation,/libs/core/wcm/components/search/v1/search]"
+                                layout="responsiveGrid"
+                                layoutDisabled="false">
+                                <jcr:content jcr:primaryType="nt:unstructured"/>
+                                <cq:authoring jcr:primaryType="nt:unstructured">
+                                    <assetToComponentMapping jcr:primaryType="nt:unstructured">
+                                        <mapping_1575024218483
+                                            jcr:primaryType="nt:unstructured"
+                                            assetGroup="media"
+                                            assetMimetype="image/*"
+                                            droptarget="image"
+                                            resourceType="core/wcm/components/image/v3/image"/>
+                                        <mapping_1575030843388
+                                            jcr:primaryType="nt:unstructured"
+                                            assetGroup="content"
+                                            assetMimetype="text/html"
+                                            droptarget="experiencefragment"
+                                            resourceType="core/wcm/components/experiencefragment/v2/experiencefragment"/>
+                                        <mapping_1575030853128
+                                            jcr:primaryType="nt:unstructured"
+                                            assetGroup="media"
+                                            assetMimetype="[text/html,application/vnd.adobe.contentfragment]"
+                                            droptarget="contentfragment"
+                                            resourceType="core/wcm/components/contentfragment/v1/contentfragment"/>
+                                    </assetToComponentMapping>
+                                </cq:authoring>
+                            </policy_xf_root>
+                        </container>
+                    </v1>
+                </container>
+            </components>
+        </wcm>
+    </core>
+</jcr:root>
