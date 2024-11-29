@@ -24,7 +24,7 @@ npm i @rollup/plugin-node-resolve rollup-plugin-svelte --save-dev
 
 #### rollup.config.js
 
-```
+```js
 import svelte from 'rollup-plugin-svelte';
 import resolve from '@rollup/plugin-node-resolve';
 
@@ -49,7 +49,7 @@ npm i aemsync concurrently --save-dev
 ```
 
 with all the steps above your `package.json` should  look like
-```
+```json
 {
   "name": "aem-svelte",
   "author": "Yegor Kozlov",
@@ -74,7 +74,7 @@ with all the steps above your `package.json` should  look like
 ## Create Svelte components
 
 #### counter.svelte
-```
+```svelte
 <script>
   import { count } from './store.js';
   export let message;
@@ -91,7 +91,7 @@ with all the steps above your `package.json` should  look like
 ```
 The counter value is managed in a Svelte store and can be used by other components:
 #### store.js
-```
+```js
 // store.js
 // eslint-disable-next-line import/no-unresolved
 import { writable } from 'svelte/store';
@@ -102,7 +102,7 @@ export const count = writable(0);
 ### Create a Registry of Svelte components
 
 We will need it to resolve components by name
-```
+```js
 import Counter from './counter.svelte';
 
 const COMPONENTS = {
@@ -116,7 +116,7 @@ export default COMPONENTS;
 
 This JavaScript file will handle all our components’ registration, creation mounting and it will make sure that newly added components to the page get picked up, even after the DOM has loaded.
 
-```
+```js
 import COMPONENTS from './registry';
 
 class SvelteComponent extends HTMLElement {
@@ -172,6 +172,6 @@ you should see something like
 [1] + jcr_root/apps/aem-svelte/clientlibs/clientlib-site/js/bundle.js
 ```
 
-The navigate to the counter page http://localhost:4504/content/aem-svelte/counter.html?wcmmode=disabled and you should see your Svelte component in action.
+The navigate to the counter page http://localhost:4502/content/aem-svelte/counter.html?wcmmode=disabled and you should see your Svelte component in action.
 
 All changes made in the ui.fronentend module will be compiled and push to AEM. 
