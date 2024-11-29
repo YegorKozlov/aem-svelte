@@ -17,8 +17,8 @@ and the Rollup libraries
 ```
 npm i @rollup/plugin-node-resolve rollup-plugin-svelte --save-dev
 ```
-- `@rollup/plugin-node-resolve`, which is used to help rollup resolve third-party plugins
-- `rollup-plugin-svelte` a third-party plugin that helps rollup understand how to process Svelte apps
+- `@rollup/plugin-node-resolve` is used to help rollup resolve third-party plugins
+- `rollup-plugin-svelte` is a third-party plugin that helps rollup understand how to process Svelte apps
 
 ### Create the Rollup Config File
 
