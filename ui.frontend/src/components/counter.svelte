@@ -1,13 +1,12 @@
 <script>
-  import { count } from './store.js';
-  export let message;
+  let props = $props();
+	import { count } from './store';
 
-	export function increment() {
+	function increment() {
 		count.update(n => n + 1);
 	}
 </script>
 
-<button on:click={increment}>
-	{message} clicked {$count}
-	{$count === 1 ? 'time' : 'times'}
+<button onclick={increment}>
+	{props.message || 'This Button'} clicked {$count}	time{$count === 1 ? '' : 's'}
 </button>

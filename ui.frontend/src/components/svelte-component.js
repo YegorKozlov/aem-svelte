@@ -1,13 +1,14 @@
 import COMPONENTS from './registry';
+import { mount } from 'svelte';
 
 class SvelteComponent extends HTMLElement {
   connectedCallback() {
     const props = this.dataset;
-    const clz = COMPONENTS[props.component];
-    if(!clz) {
+    const component = COMPONENTS[props.component];
+    if(!component) {
       throw new Error(`Component ${props.component} not found. Known components: ${Object.keys(COMPONENTS).join(', ')}`);
     }
-    new clz({ target: this, props });
+    mount(component, { target: this, props });
   }
 }
 
